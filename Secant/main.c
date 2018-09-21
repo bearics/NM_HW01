@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 double f(double x) { return x * x*x + 4 * x*x - 10; }	// example function
-double secant(double a, double b) { return (b - (f(b)*(b - a)) / (f(b) - f(a))); }	// 
+double secant(double a, double b) { return (b - (f(b)*(b - a)) / (f(b) - f(a))); }	 
 // secant formulation,  input a = Pn, b = P(n-1)
 
 void compute()
@@ -25,9 +25,5 @@ void main()
 {
 	compute();
 
-	while (1)
-	{
-
-	}
 	return 0;
 }
